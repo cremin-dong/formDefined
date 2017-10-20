@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>表单设计</title>
+   
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/layout.css" >
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-datetimepicker.min.css" >
+
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	
+    <script type="text/javascript" src="js/jquery-ui.js"></script>
+    <script type="text/javascript" src="js/bootstrap-datetimepicker.min.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="js/bootstrap-datetimepicker.zh-CN.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="js/design.js"></script>
+	
+	 <script type="text/javascript" src="js/fill.js"></script>
+</head>
+
+<body>
+
+<form class="form-horizontal">
+
+    <!-- 表单设计器获取的内容start -->
+	
+	<div class="view drag form-group">
+		<div class="col-md-1"></div>
+		<div class="col-md-10 head-zone">标题内容</div>
+	</div><div class="view drag form-group">
+		<div class="col-md-1"></div>
+		<p class="col-md-10 paragraph-zone">段落内容</p>
+	</div><div class="form-group">
+		 <label class="col-sm-3 control-label label-zone-text">数值</label>
+		 <div class="col-sm-8">
+			 <span class="ui-spinner ui-widget ui-widget-content ui-corner-all"><input class="spinner txt-frm-component ui-spinner-input" data-is-integer="false" data-column-info="number" autocomplete="off" role="spinbutton"><a class="ui-spinner-button ui-spinner-up ui-corner-tr ui-button ui-widget ui-state-default ui-button-text-only" tabindex="-1" role="button" aria-disabled="false"><span class="ui-button-text"><span class="ui-icon ui-icon-triangle-1-n">▲</span></span></a><a class="ui-spinner-button ui-spinner-down ui-corner-br ui-button ui-widget ui-state-default ui-button-text-only" tabindex="-1" role="button" aria-disabled="false"><span class="ui-button-text"><span class="ui-icon ui-icon-triangle-1-s">▼</span></span></a></span>
+
+		 </div>
+	  </div><div class="form-group">
+		 <label class="col-sm-3 control-label label-zone-text">文本框</label>
+		 <div class="col-sm-8">
+			<input type="text" class="form-control txt-zone-placeholder txt-frm-component" placeholder="文本框">
+			 <p class="help-block hide"></p>
+		 </div>
+	  </div><div class="form-group">
+		 <label class="col-sm-3 control-label label-zone-text">多行文本</label>
+		 <div class="col-sm-8">
+			<textarea class="form-control  txt-frm-component" data-column-info="longText" rows="3"></textarea>
+			<p class="help-block hide"></p>
+		 </div>
+	  </div><div class="form-group">
+		 <label class="col-sm-3 control-label label-zone-text">上传</label>
+		 <div class="col-sm-8">
+			  <input type="file" name="files">
+
+			  <input type="hidden" class="txt-frm-component txt-file-upload">
+			  <ul class="li-file-list"></ul>
+				<p class="help-block hide"></p>
+		 </div>
+	  </div><div class="form-group">
+		 <label class="col-sm-3 control-label label-zone-text">日期</label>
+		 <div class="col-sm-8">
+			<input size="16" type="text" value="" readonly="" class="form-control form_datetime  txt-frm-component" data-column-info="date">
+
+		 </div>
+	  </div><div class="form-group">
+		 <label class="col-sm-3 control-label label-start-zone-text">开始时间</label>
+		 <div class="col-sm-8">
+			<input size="16" type="text" value="" readonly="" class="form-control form_start_datetime  txt-frm-component" data-column-info="date">
+			  
+		 </div>
+	  </div><div class="form-group">
+		 <label class="col-sm-3 control-label label-end-zone-text">结束时间</label>
+		 <div class="col-sm-8">
+			<input size="16" type="text" value="" readonly="" class="form-control form_end_datetime  txt-frm-component" data-column-info="date">
+			  
+		 </div>
+	  </div><div class="form-group">
+		 <label class="col-sm-3 control-label label-zone-text">内联单选框</label>
+		 <div class="col-sm-8 radio-inline-wrap">
+			 <label class="radio-inline">
+				 <input type="radio" value="选项1" class="txt-frm-component"> <div>选项1</div>
+			  </label>
+			  <label class="radio-inline">
+				 <input type="radio" value="选项2" class="txt-frm-component"> <div>选项2</div>
+			  </label>
+			  <label class="radio-inline">
+				 <input type="radio" value="选项3" class="txt-frm-component"> <div>选项3</div>
+			  </label>
+		 </div>
+	  </div><div class="form-group">
+		 <label class="col-sm-3 control-label label-zone-text">下拉框</label>
+		 <div class="col-sm-8">
+			  <select class="form-control  txt-frm-component">
+				 <option>选项1</option>
+				 <option>选项2</option>
+				 <option>选项3</option>
+	
+			  </select>
+		 </div>
+	  </div><div class="form-group">
+		 <label class="col-sm-3 control-label label-zone-text">单选框</label>
+		 <div class="col-sm-8 radio-wrap">
+			  <div class="radio">
+				 <label>
+					<input type="radio" value="选项1" class="txt-frm-component">
+					<div>选项1</div>
+				 </label>
+			  </div>
+			  <div class="radio">
+				 <label>
+					<input type="radio" value="选项2" class="txt-frm-component">
+					<div>选项2</div>
+				 </label>
+			  </div>
+			  <div class="radio disabled">
+				 <label>
+					<input type="radio" value="选项3" class="txt-frm-component">
+					<div>选项3</div>
+				 </label>
+			  </div>
+		 </div>
+	  </div><div class="form-group">
+		 <label class="col-sm-3 control-label label-zone-text">复选框</label>
+		 <div class="col-sm-8 checkbox-wrap">
+			  <div class="checkbox">
+				 <label>
+					<input type="checkbox" value="选项1" class="txt-frm-component">
+					 <div>选项1</div>
+				 </label>
+			  </div>
+			  <div class="checkbox">
+				 <label>
+					<input type="checkbox" value="选项2" class="txt-frm-component">
+					<div>选项2</div>
+				 </label>
+			  </div>
+			  <div class="checkbox">
+				 <label>
+					<input type="checkbox" value="选项3" class="txt-frm-component">
+					<div>选项3</div>
+				 </label>
+			  </div>
+		 </div>
+	  </div><div class="form-group">
+		 <label class="col-sm-3 control-label label-zone-text">内联复选框</label>
+		 <div class="col-sm-8 checkbox-inline-wrap">
+			  <label class="checkbox-inline">
+				 <input type="checkbox" class="txt-frm-component" value="选项1"> <div>选项1</div>
+			  </label>
+			  <label class="checkbox-inline">
+				 <input type="checkbox" class="txt-frm-component" value="选项2"> <div>选项2</div>
+			  </label>
+			  <label class="checkbox-inline">
+				 <input type="checkbox" class="txt-frm-component" value="选项3"> <div>选项3</div>
+			  </label>
+		 </div>
+	  </div><div class="form-group">
+		 
+		 <div class="col-sm-12  button-wrap" style="text-align:center;">
+			 <button type="button" class="btn btn-default">按钮1</button>
+			 <button type="button" class="btn btn-default">按钮2</button>
+			 <button type="button" class="btn btn-default">按钮3</button>
+		 </div>
+	  </div>
+   
+   <!-- 表单设计器获取的内容end -->
+</form>
+
+</body>
